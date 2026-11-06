@@ -1,0 +1,40 @@
+{
+  "name": "dsh-safety-guard",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DSH safety guard: origin markers, DSH-vs-user identification, and pre-modify/pre-delete backups in fully-permissive mode.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1860lixingzhou/dsh-safety-guard.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "safety",
+    "backup",
+    "origin"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": "0.2.0-rc.2"
+    }
+  }
+}

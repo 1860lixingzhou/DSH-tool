@@ -1,0 +1,11 @@
+- insert:
+    - id: dsh-safety-guard
+      name: dsh-safety-guard
+      config:
+        backupRoot: 'D:\DSH备份'
+        backupInModes:
+          - danger-full-access
+        markEnabled: true
+        snapshotBeforeShellDelete: true
+        maxSnapshotBytes: 268435456
+        markMaxFileBytes: 8388608
